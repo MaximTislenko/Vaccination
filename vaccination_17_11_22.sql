@@ -3,16 +3,16 @@ CREATE DATABASE vaccination;
 USE vaccination;
 
 CREATE TABLE vaccine_controlled_diseases (
-  id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT "ID_Заболевания",
-  name_rus VARCHAR(50) NOT NULL COMMENT "Русское именование",
-  name_eng VARCHAR(50) NOT NULL COMMENT "Английское именование",
-  name_lat VARCHAR(50) NOT NULL COMMENT "Латинское именование"
-) COMMENT "Вакцин контролируемые заболевания";
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT "Id_РЅРѕР·РѕР»РѕРіРёРё",
+  name_rus VARCHAR(50) NOT NULL COMMENT "Р СѓСЃСЃРєРѕРµ РёРјРµРЅРѕРІР°РЅРёРµ",
+  name_eng VARCHAR(50) NOT NULL COMMENT "РђРЅРіР»РёР№СЃРєРѕРµ РёРјРµРЅРѕРІР°РЅРёРµ",
+  name_lat VARCHAR(50) NOT NULL COMMENT "Р›Р°С‚РёРЅСЃРєРѕРµ РёРјРµРЅРѕРІР°РЅРёРµ"
+) COMMENT "Р’Р°РєС†РёРЅ РєРѕРЅСЂРѕР»РёСЂСѓРµРјС‹Рµ Р·Р°Р±РѕР»РµРІР°РЅРёСЏ";
 
 INSERT vaccine_controlled_diseases (name_rus, name_eng, name_lat)
 VALUES
-('Вирусный гепатит В', 'Viral hepatitis B', 'Hepatitis B'),
-('Полиомиелит', 'Polio', 'Polio'),
-('Дифтерия', 'Diphtheria', 'Diphtheria'),
-('Коклюш', 'Pertussis', 'Pertussis'),
-('Столбняк', 'Tetanus', 'Tetanus');
+('Р’РёСЂСѓСЃРЅС‹Р№ РіРµРїР°С‚РёС‚ Р’', 'Viral hepatitis B', 'Hepatitis B'),
+('РџРѕР»РёРѕРјРёРµР»РёС‚', 'Polio', 'Polio'),
+('Р”РёС„С‚РµСЂРёСЏ', 'Diphtheria', 'Diphtheria'),
+('РљРѕРєР»СЋС€', 'Pertussis', 'Pertussis'),
+('РЎС‚РѕР»Р±РЅСЏРє', 'Tetanus', 'Tetanus');
